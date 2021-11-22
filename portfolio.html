@@ -12,43 +12,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-<header class="header">
-    <div class="container header-container">
-        <nav class="header-nav">
-            <a class="link logo logo-header" href="">Web<span class="logo1" lang="en">Studio</span></a>
-            <ul class="list menu-list menu-list-header">
-                <li class="menu-item">
-                    <a class="menu-link menu-link-header link" href="index.html">Студия</a>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="navigation">
+                <a class="logo header__logo" href="">Web<span class="header__logo--accent-color" lang="en">Studio</span></a>
+                <ul class="navigation__list list">
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link text-link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--current text-link link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link text-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li class="contacts__item link">
+                    <a class="contacts__link text-link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-link menu-link-header link current" href="portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link menu-link-header link" href="">Контакты</a>
+                <li class="contacts__item link">
+                    <a class="contacts__link text-link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="list menu-list header-connect">
-            <li class="list-header-mail list-header-contact contact-item">
-                <a class="header-contact link header-mail contact-link" href="mailto:info@devstudio.com">
-                    <svg class="contact-icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li class="list-header-contact contact-item">
-                <a class="header-contact link header-phone contact-link" href="tel:+380961111111">
-                    <svg class="contact-icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header>
+        </div>
+    </header>
     <main>
         <section class="section">
             <div class="container portfolio-container">
