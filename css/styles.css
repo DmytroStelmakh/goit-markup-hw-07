@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --header-color: #212121;
   --logo-color: #2196f3;
   --logo1-color: #000000;
@@ -50,7 +50,7 @@ body {
   text-decoration: none;
 }
 
-/*Studio-header*/
+
 
 .logo {
   font-family: "Raleway";
@@ -189,7 +189,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/*Studio-main*/
+
 
 .hero-container {
   text-align: center;
@@ -485,7 +485,7 @@ body {
   fill: var(--logo-color);
 }
 
-/*Studio-footer*/
+
 
 .footer {
   background-color: var(--hero-color);
@@ -646,7 +646,7 @@ body {
   margin-left: 10px;
   fill: var(--primary-title-color);
 }
-/*Portfolio-main*/
+
 
 .btn-menu {
   display: flex;
@@ -792,7 +792,7 @@ img {
   color: var(--logo-color);
 }
 
-/*Modal*/
+
 
 .backdrop {
   width: 100vw;
@@ -1014,4 +1014,5 @@ img {
 .modal-btn:focus .modal-close {
   fill: var(--logo-color);
   cursor: pointer;
-}
+} 
+*/

@@ -1,20 +1,20 @@
 .backdrop {
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: visibility 500ms var(--timing-function),
+    opacity 1000ms var(--timing-function);
 }
-.backdrop.is-hidden {
+
+.is-hidden {
+  visibility: hidden;
   opacity: 0;
-  pointer-events: none; /*на элемент не действует клики мышкой*/
-  visibility: hidden; /*скрывает модальное окно*/
-  transition: opacity 250ms var(--timing-function),
-    visibility 250ms var(--timing-function);
-  &.modal {
-    transform: translate(-50%, -50%) scale(0.7);
-  }
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
+  transition: transform 500ms var(--timing-function);
 }

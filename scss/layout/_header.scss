@@ -1,13 +1,6 @@
 .header {
-  position: fixed;
-  width: 100%;
-  min-height: 80px;
-  top: 0;
-  left: 0;
-  z-index: 1;
   background-color: var(--logo-bg-white-color);
-  border-bottom: 1px solid;
-  border-color: var(--border-header);
+  border-bottom: 1px solid var(--border-header);
 }
 .header__container {
   display: flex;
@@ -21,7 +14,7 @@
 .header__logo--accent-color {
   color: var(--logo-black-color);
 }
-/*Навигация */
+/*Navigation */
 .navigation {
   display: flex;
   align-items: center;
@@ -42,7 +35,7 @@
     color: var(--accent-color);
   }
 }
-/* Контакты */
+/* Contacts */
 .contacts {
   display: flex;
 }

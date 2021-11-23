@@ -1,6 +1,7 @@
-.navigation__link--current {
+.navigation__list .navigation__link--current {
   color: var(--accent-color);
 }
+
 .navigation__link--current::after {
   position: absolute;
   left: 0;
