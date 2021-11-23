@@ -52,12 +52,12 @@
         </div>
     </header>
     <main>
-        <section class="section">
-            <div class="container portfolio-container">
+        <section class="section portfolio">
+            <div class="container ">
             <h2 hidden>Перечень услуг</h2>
             <ul class="list btn-menu">
                 <li class="btn-list">
-                    <button class="btn-item active" type="button">Все</button>
+                    <button class="btn-item btn-item-active active" type="button">Все</button>
                 </li>
                 <li class="btn-list">
                     <button class="btn-item" type="button">Веб-сайты</button>
@@ -241,48 +241,50 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-container-address">
-                <a class="link logo logo-footer" href="">Web<span class="logo2" lang="en">Studio</span></a>
-                <address class="footer-address">
-                    <a class="address-city link address-connect-item" href="https://goo.gl/maps/vY3BDn3XB5CnUUM28">г. Киев,
-                        пр-т Леси Украинки, 26</a>
-                    <ul class=" list menu-list footer-connect">
-                        <li class="address-connect-item footer-connect-item">
-                            <a class="link footer-contact footer-mail" href="info@example.com">info@example.com</a>
+            <div class="footter__address">
+                <a class="logo footer__logo" href="">Web<span class="footer__logo--accent-logo" lang="en">Studio</span></a>
+                <address class="address">
+                    <ul class="address__menu list">
+                        <li class="address__item">
+                            <a class="address__link address__link_map" href="https://goo.gl/maps/vY3BDn3XB5CnUUM28">г. Киев,
+                                пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="address-connect-item footer-connect-item footer-connect-phone">
-                            <a class="link footer-contact footer-phone" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="address__item">
+                            <a class="address__link" href="info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-links">
-                <p class="footer-links-title">Присоединяйтесь</p>
-                <ul class="footer-items list">
-                    <li class="footer-item">
-                        <a href="" class="footer-link footer-instagram">
-                            <svg class="footer-icon" width="20" height="20">
+            <div class="footer__social-container">
+                <p class="footer__title">Присоединяйтесь</p>
+                <ul class="social-menu list">
+                    <li class="social-menu__item">
+                        <a href="" class="social-menu__link social-menu__link_footer">
+                            <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item">
-                        <a href="" class="footer-link footer-twitter">
-                            <svg class="footer-icon" width="20" height="20">
+                    <li class="social-menu__item">
+                        <a href="" class="social-menu__link social-menu__link_footer">
+                            <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item">
-                        <a href="" class="footer-link footer-facebook">
-                            <svg class="footer-icon" width="20" height="20">
+                    <li class="social-menu__item">
+                        <a href="" class="social-menu__link social-menu__link_footer">
+                            <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item">
-                        <a href="" class="footer-link footer-linkedin">
-                            <svg class="footer-icon" width="20" height="20">
+                    <li class="social-menu__item">
+                        <a href="" class="social-menu__link social-menu__link_footer">
+                            <svg class="social-menu__icon social-menu__icon_footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -290,9 +292,10 @@
                 </ul>
             </div>
             <form class="footer-email">
-                <label><span class="footer-label">ПОДПИШИТЕСЬ НА РАССЫЛКУ </span>
+                <label>
+                    <p class="footer-label">Подпишитесь на рассылку </p>
                     <input type="email" name="email" placeholder="E-mail" class="input" />
-            
+    
                 </label>
                 <button type="submit" class="label-btn" data-modal-open>
                     Подписаться
@@ -301,6 +304,7 @@
                     </svg>
                 </button>
             </form>
+        </div>
         </div>
     </footer>
 </body>
